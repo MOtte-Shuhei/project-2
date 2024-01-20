@@ -1,0 +1,45 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align:center;
+  font-family: 'Noto Sans en', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main-nav {
+  width: 100%;
+  position: fixed;
+  text-align: left;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 45px 5% 0 5%;
+  font-size: 18px;
+}
+
+.name h1 {
+  display: block;
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.nav ol {
+  padding: 5px 10px 10px 10px;
+}
+
+header {
+  line-height: 1.5;
+}
+
+header .profile-image {
+  margin-top: 50px;
+  width: 150px;
+}
