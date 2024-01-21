@@ -1,4 +1,7 @@
-
+* {
+  padding: 0;
+  margin: 0;
+}
 
 body {
   margin: 0;
@@ -8,13 +11,11 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.main-nav {
-  width: 100%;
-  position: fixed;
-  text-align: left;
+.name {
+  margin: 20px;
 }
 
-.nav {
+/*.nav {
   display: flex;
   justify-content: space-around;
   font-weight: bold;
@@ -22,24 +23,67 @@ body {
   margin: 0 auto;
   padding: 45px 5% 0 5%;
   font-size: 18px;
+}*/
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
 }
 
-.name h1 {
-  display: block;
-  margin-right: auto;
-  font-weight: bold;
-  font-size: 10px;
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  position: relative;
 }
 
-.nav ol {
-  padding: 5px 10px 10px 10px;
+.main-nav ul li {
+  padding: 1rem 2rem;
+  width: 50px 50px 50px 50px;
+  height: 20px;
+}
+
+.intro-text p {
+  padding: 30px;
+  text-align: left;
+}
+
+
+@media screen and (min-width: 768px) {
+  .main-nav {
+    flex-direction: row;
+  }
 }
 
 header {
-  line-height: 1.5;
+  display: flex;
 }
 
-header .profile-image {
-  margin-top: 50px;
-  width: 150px;
+header .profile-text {
+  width: 50%;
+}
+header .profile-img {
+  width: 50%;
+}
+
+/*.card {
+  padding: 50px;
+}*/
+
+.main flex {
+  display: flex;
+}
+main .images {
+  width: 300px;
+  margin-top: 70px;
+}
+
+h3 {
+  margin: 20px;
+}
+
+p {
+  text-align: center;
 }
