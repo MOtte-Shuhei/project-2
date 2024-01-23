@@ -1,4 +1,5 @@
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -73,7 +74,9 @@ header .profile-img {
 }*/
 
 .main flex {
+  height: 100vh;
   display: flex;
+  justify-content: space-around;
 }
 main .images {
   width: 300px;
