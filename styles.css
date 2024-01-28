@@ -16,16 +16,6 @@ body {
   margin: 20px;
 }
 
-/*.nav {
-  display: flex;
-  justify-content: space-around;
-  font-weight: bold;
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 45px 5% 0 5%;
-  font-size: 18px;
-}*/
-
 .main-nav {
   display: flex;
   flex-direction: column;
@@ -49,6 +39,8 @@ body {
 .intro-text p {
   padding: 30px;
   text-align: left;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 
@@ -69,9 +61,7 @@ header .profile-img {
   width: 50%;
 }
 
-/*.card {
-  padding: 50px;
-}*/
+
 
 .main flex {
   height: 100vh;
@@ -81,6 +71,7 @@ header .profile-img {
 main .images {
   width: 300px;
   margin-top: 70px;
+  flex-wrap: wrap;
 }
 
 h3 {
@@ -89,4 +80,12 @@ h3 {
 
 p {
   text-align: center;
+}
+
+.information {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  float: 1 1 auto;
+  flex-basis: 100%;
 }
