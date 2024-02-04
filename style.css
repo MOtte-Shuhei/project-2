@@ -74,7 +74,7 @@ body {
 
 
 /* Media Queries*/
-@media screen and(min-width:768px) {
+@media screen and (min-width:768px) {
   .card {
     display: flex;
     flex-wrap: wrap;
@@ -100,7 +100,7 @@ body {
   }
 }
 
-@media screen and(min-width: 1024px){
+@media screen and (min-width: 1024px){
   .top {
     display: flex;
     justify-content: space-between;
