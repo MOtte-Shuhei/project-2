@@ -13,6 +13,7 @@ body {
 }
 
 .top-nav {
+  display: flex;
   text-align: center;
   margin: auto;
   padding: 10px 10px;
@@ -78,17 +79,14 @@ body {
   .card {
     display: flex;
     flex-wrap: wrap;
+    flex: 50%;
   }
 
   .introduction {
     padding: 2px 5px;
     display: flex;
     flex-direction: row-reverse;
-    flex-wrap: wrap;
     justify-content: center;
-    flex: 1 1 auto;
-    flex-basis: 100%;
-    text-align: left;
   }
   
   .img {
