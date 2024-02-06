@@ -2,112 +2,170 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   max-width: 1024px;
   text-align: center;
   line-height: 1.5;
+  background-color: rgb(151, 255, 250);
+  font-family: 'Protest Strike', sans-serif;
+}
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header h1 {
+  font-size: 3rem;
+  margin: 2rem;
 }
 
-.top-nav {
+header nav {
+  width: 90%;
+  margin-bottom: 3rem;
+}
+
+header nav ul {
+  width: 100%;
   display: flex;
-  text-align: center;
-  margin: auto;
-  padding: 10px 10px;
+  flex-direction: column;
+}
+
+li {
   list-style: none;
 }
 
-.tops {
-  margin: 10px;
+header nav ul li a {
+  background-color: white;
+  display: block;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  margin-bottom: 0.3rem;
 }
 
-.img {
-  margin: auto;
-  width: 80%;
-  height: 50%;
-  display: inline-block;
+#introduction {
+  margin-bottom: 2rem;
 }
 
-.intro {
-  display: flex;
-  flex-wrap: wrap;
+#introduction img {
+  max-width: 70%;
+  border-radius: 10px;
 }
 
-.portfolio {
-  margin: 10px 10px;
-  padding: 5px 5px;
+p {
+  line-height: 1.5;
+  padding: 1rem 3rem 2rem;
 }
 
-.image {
-  margin: 0 auto;
-  width: 80%;
-  height: 50%;
-  display: inline-block;
+#portfolio {
+  background-color: white;
+  margin-bottom: 2rem;
 }
 
-.contact {
-  font-size: 1.5em;
+h2 {
+  font-size: 20px;
+}
+
+#portfolio h2 {
+  padding: 3rem 2rem;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+.card {
+  padding-bottom: 2rem;
+}
+
+.card img {
+  margin-bottom: 2rem;
+}
+
+img {
+  max-width: 100%;
 }
 
 .information {
-  list-style: none;
-  padding: 5%;
+  padding: 5px;
+  font-size: 15px;
 }
 
-.footer {
-  margin: 0 auto;
-  padding: 10px 20px;
-  text-align: center;
+footer nav {
+  font-size: 15px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-  .nav {
-    display: flex;
-    list-style: none;
-    padding: 10px 10px;
-  }
+footer hr {
+  width: 90%;
+  margin: 0 auto;
+}
+
+footer nav ul {
+  display: none;
+}
+
+address {
+  font-style: normal;
+  margin-bottom: 5rem;
+}
+
+address div {
+  margin-bottom: 1rem;
+}
+
+address a {
+  text-transform: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  transition: all 0.5s;
+}
 
 
 
 /* Media Queries*/
 @media screen and (min-width:768px) {
-  .card {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 50%;
+  body {
+    font-size: 1.2rem;
   }
 
-  .introduction {
-    padding: 2px 5px;
+  header nav ul {
+    width: 100%;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: center;
   }
-  
-  .img {
-    display: inline-flex;
-    width: auto;
-    height: auto;
-    margin: 5px 5px;
-    padding: 5px;
-  }
-}
 
-@media screen and (min-width: 1024px){
-  .top {
-    display: flex;
-    justify-content: space-between;
+  header nav ul li a {
+    background-color: antiquewhite;
   }
-  
-  .top-nav {
-    word-spacing: 1.5em;
-    padding: 5px;
-    margin: 5px;
+
+  #introduction img {
+    width: 40%;
+    order: 1;
+    margin-right: 2rem;
+  }
+
+  #introduction {
+    display: flex;
+  }
+
+  #introduction p {
+    text-align: left;
+    padding: 0 2rem;
+  }
+  .card {
+    flex-basis: 50%;
   }
 
   .container {
@@ -115,20 +173,49 @@ body {
     flex-wrap: wrap;
   }
 
-  .intro {
-    padding: 10px;
-    font-size: 1.2em;
-    margin: 25px;
-  }
 
-  .introduction {
-    text-align: left;
+  .back {
+    display: none;
   }
-
-  .img {
-    font-weight: 500;
+  
+  footer nav ul {
     display: flex;
-    list-style: none;
-    justify-content: space-around;
+    gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+    padding-right: 3rem;
+  }
+
+  header nav {
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  header nav ul li a {
+    padding: 1rem;
+  }
+
+  #intro p {
+    padding: 0 4rem;
+    margin-right: 2rem;
+  }
+
+  #intro img {
+    margin-right: 4rem;
+  }
+
+  #portfolio {
+    margin: 0 2rem;
+  }
+  
+  .card {
+    flex: 33%;
+    font-size: 1rem;
   }
 }
