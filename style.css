@@ -12,6 +12,7 @@ body {
   line-height: 1.5;
   background-color: rgb(151, 255, 250);
   font-family: 'Protest Strike', sans-serif;
+  margin: auto;
 }
 header {
   width: 100%;
@@ -37,6 +38,7 @@ header nav ul {
 
 li {
   list-style: none;
+  margin: 1.2rem;
 }
 
 header nav ul li a {
@@ -93,6 +95,10 @@ img {
 .information {
   padding: 5px;
   font-size: 15px;
+}
+
+#contact {
+  margin: 3rem;
 }
 
 footer nav {
@@ -201,12 +207,12 @@ a {
     padding: 1rem;
   }
 
-  #intro p {
+  #introduction p {
     padding: 0 4rem;
     margin-right: 2rem;
   }
 
-  #intro img {
+  #introduction img {
     margin-right: 4rem;
   }
 
