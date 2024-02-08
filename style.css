@@ -171,12 +171,13 @@ a {
     padding: 0 2rem;
   }
   .card {
-    flex-basis: 50%;
+    flex-basis: 49%;
   }
 
   .container {
     display: flex;
     flex-wrap: wrap;
+    gap: 1%;
   }
 
 
@@ -220,8 +221,9 @@ a {
     margin: 0 2rem;
   }
   
+  
   .card {
-    flex: 33%;
+    flex: 32%;
     font-size: 1rem;
   }
 }
